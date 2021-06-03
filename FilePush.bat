@@ -12,7 +12,7 @@ git add .
 
 git commit -m %msg%
 
-git push origin mian
+git push origin main
 
 echo "--------End!--------"
 
