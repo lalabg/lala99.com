@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>我是辣辣 - 退役的软件工程师，喜欢咖啡和茶，坐标武汉。</title>
+    <style>
+        html {
+        font-size: 62.5%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    }
+
+    body {
+        font-size: 1.8rem;
+        line-height: 1.618;
+        max-width: 38em;
+        margin: auto;
+        color: #4a4a4a;
+        background-color: #f9f9f9;
+        padding: 13px;
+    }
+
+    @media (max-width: 684px) {
+        body {
+            font-size: 1.53rem;
+        }
+    }
+
+    @media (max-width: 382px) {
+        body {
+            font-size: 1.35rem;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.1;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        font-weight: 700;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-word;
+    }
+
+    h1 {
+        font-size: 2.35em;
+    }
+
+    p {
+        margin-top: 0px;
+        margin-bottom: 2.5rem;
+    }
+
+    hr {
+        border-color: #1d7484;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1d7484;
+    }
+
+    a:hover {
+        color: #982c61;
+        border-bottom: 2px solid #4a4a4a;
+    }
+
+    a:visited {
+        color: #144f5a;
+    }
+
+    ul {
+        padding-left: 1.4em;
+        margin-top: 0px;
+        margin-bottom: 2.5rem;
+    }
+
+    li {
+        margin-bottom: 0.4em;
+    }
+
+    blockquote {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 1em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        padding-right: 0.8em;
+        border-left: 5px solid #1d7484;
+        margin-bottom: 2.5rem;
+        background-color: #f1f1f1;
+    }
+
+    blockquote p {
+        margin-bottom: 0;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+        margin-top: 5rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <img alt="lalayes.com" src="logo.png" title="我是辣辣">
+        <h1>Hi I'm Lala</h1>
+        <hr>
+        <p>My website changed to a new URL: <a href="https://lalayes.com">[Code & Remark]</strong></a></p>
+        <p>Some learning content will be recorded there, I will update the content frequently if I have time. </p>
+        <p>是时候说再见了，就在 <strong id="totalSecond">33</strong> 秒之后重逢！😜</p>
+        <p><strong><em>URL</em> update record is here</strong>:</p>
+        <ul>
+            <li>Old link <a href="https://lala99.com">https://lala99.com</a> ↩</li>
+            <li>New link <a href="https://lalayes.com">https://lalayes.com</a> ↩</li>
+        </ul>
+        <blockquote>
+            <p>One today is worth two tomorrows. If a thing is worth doing it is worth doing well. -lala.china</p>
+        </blockquote>
+        <hr>
+        <p>
+            <script language="javascript" type="text/javascript">
+            document.write("&copy; " + new Date().getFullYear());
+            </script> <a href="https://lalayes.com">LALA<del>99</del><ins>YES</ins>.COM</a>
+        </p>
+    </div>
+    <script language="javascript" type="text/javascript">
+    var second = document.getElementById('totalSecond').textContent;
+
+    if (navigator.appName.indexOf("Explorer") > -1) {
+        second = document.getElementById('totalSecond').innerText;
+    } else {
+        second = document.getElementById('totalSecond').textContent;
+    }
+
+    setInterval("redirect()", 1000);
+
+    function redirect() {
+        if (second < 0) {
+            location.href = 'https://lalayes.com';
+        } else {
+            if (navigator.appName.indexOf("Explorer") > -1) {
+                document.getElementById('totalSecond').innerText = second--;
+            } else {
+                document.getElementById('totalSecond').textContent = second--;
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>
